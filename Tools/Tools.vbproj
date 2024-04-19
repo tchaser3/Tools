@@ -1,0 +1,3362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94E91E7D-9163-4A4A-8FFC-F5EE7F3D219E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Tools.My.MyApplication</StartupObject>
+    <RootNamespace>Tools</RootNamespace>
+    <AssemblyName>Tools</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Tools.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Tools.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EventLogVBDLL">
+      <HintPath>..\..\Blue Jay Class Library\EventLogVBDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCable.Designer.vb">
+      <DependentUpon>AddCable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddCable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCableUpdateTables.Designer.vb">
+      <DependentUpon>AddCableUpdateTables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddCableUpdateTables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddInformationTechnologyAccessories.Designer.vb">
+      <DependentUpon>AddInformationTechnologyAccessories.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddInformationTechnologyAccessories.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddInformationTechnologyAccessoryHistory.Designer.vb">
+      <DependentUpon>AddInformationTechnologyAccessoryHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddInformationTechnologyAccessoryHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddInformationTechnologyDevice.Designer.vb">
+      <DependentUpon>AddInformationTechnologyDevice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddInformationTechnologyDevice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddInformationTechnologyHistory.Designer.vb">
+      <DependentUpon>AddInformationTechnologyHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddInformationTechnologyHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddingToolHistory.Designer.vb">
+      <DependentUpon>AddingToolHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddingToolHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddingTrailerHistory.Designer.vb">
+      <DependentUpon>AddingTrailerHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddingTrailerHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddingVehicleHistory.Designer.vb">
+      <DependentUpon>AddingVehicleHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddingVehicleHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddManagerQueueTransaction.Designer.vb">
+      <DependentUpon>AddManagerQueueTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddManagerQueueTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPartNumberToInventory.Designer.vb">
+      <DependentUpon>AddPartNumberToInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddPartNumberToInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPartNumberToWarehouseInventory.Designer.vb">
+      <DependentUpon>AddPartNumberToWarehouseInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddPartNumberToWarehouseInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdjustCableReel.Designer.vb">
+      <DependentUpon>AdjustCableReel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdjustCableReel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdjustCableReelDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdjustCableReelDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrativeMenu.Designer.vb">
+      <DependentUpon>AdministrativeMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrativeMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllVehicleSheetsDone.Designer.vb">
+      <DependentUpon>AllVehicleSheetsDone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllVehicleSheetsDone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArchiveDataTier.vb" />
+    <Compile Include="ArchiveIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchiveIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveIDDataTier.vb" />
+    <Compile Include="ArchiveIssuedDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchiveIssuedDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveIssuedMaterial.Designer.vb">
+      <DependentUpon>ArchiveIssuedMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveIssuedMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArchiveIssuedPartsDataTier.vb" />
+    <Compile Include="ArchiveLastTransactionDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchiveLastTransactionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveLastTransactions.Designer.vb">
+      <DependentUpon>ArchiveLastTransactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveLastTransactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArchiveReceivedDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchiveReceivedDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveReceivedDataTier.vb" />
+    <Compile Include="ArchiveReceivedMaterial.Designer.vb">
+      <DependentUpon>ArchiveReceivedMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveReceivedMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArchiveToolHistory.Designer.vb">
+      <DependentUpon>ArchiveToolHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveToolHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArchiveToolHistoryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchiveToolHistoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveUsedDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchiveUsedDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveUsedDataTier.vb" />
+    <Compile Include="ArchiveUsedMaterial.Designer.vb">
+      <DependentUpon>ArchiveUsedMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveUsedMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArchiveVehicleDailyInspectionDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchiveVehicleDailyInspectionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveVehicleHistory.Designer.vb">
+      <DependentUpon>ArchiveVehicleHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveVehicleHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArchiveVehicleHistoryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchiveVehicleHistoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveVehicleInventoryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchiveVehicleInventoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveVehicleInYardDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchiveVehicleInYardDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveVehicleSignedOutDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchiveVehicleSignedOutDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveWeeklyInspectionsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchiveWeeklyInspectionsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AssetControlMenu.Designer.vb">
+      <DependentUpon>AssetControlMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AssetControlMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssetDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AssetDataTier.vb" />
+    <Compile Include="AssetHistoryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetHistoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AssetItemDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetItemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AssetItemDataSet.vb">
+      <DependentUpon>AssetItemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AssetModuleIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetModuleIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutoSignIn.Designer.vb">
+      <DependentUpon>AutoSignIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AutoSignIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoSignInDateDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoSignInDateDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutoSignInDateDataTier.vb" />
+    <Compile Include="AutoVehicleSignedOutSheet.Designer.vb">
+      <DependentUpon>AutoVehicleSignedOutSheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AutoVehicleSignedOutSheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvailableVehicles.Designer.vb">
+      <DependentUpon>AvailableVehicles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AvailableVehicles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOMPartsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BOMPartsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BOMPartsDataTier.vb" />
+    <Compile Include="CableAdministrationMenu.Designer.vb">
+      <DependentUpon>CableAdministrationMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CableAdministrationMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CableAvailability.Designer.vb">
+      <DependentUpon>CableAvailability.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CableAvailability.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CableAvailabilityReport.Designer.vb">
+      <DependentUpon>CableAvailabilityReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CableAvailabilityReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CableDataTier.vb" />
+    <Compile Include="CableIDDataTier.vb" />
+    <Compile Include="CableMenu.Designer.vb">
+      <DependentUpon>CableMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CableMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CableReport.Designer.vb">
+      <DependentUpon>CableReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CableReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CableSelection.Designer.vb">
+      <DependentUpon>CableSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CableSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CableTransactionID.Designer.vb">
+      <DependentUpon>CableTransactionID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CableTransactionID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CableTransactionIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CableTransactionIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CableUsage.Designer.vb">
+      <DependentUpon>CableUsage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CableUsage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CableUsageDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CableUsageDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CableUsageReport.Designer.vb">
+      <DependentUpon>CableUsageReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CableUsageReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeInformationTechnologyPassword.Designer.vb">
+      <DependentUpon>ChangeInformationTechnologyPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeInformationTechnologyPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckDailyInspectionTables.Designer.vb">
+      <DependentUpon>CheckDailyInspectionTables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CheckDailyInspectionTables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckDuplicatePartNumbers.Designer.vb">
+      <DependentUpon>CheckDuplicatePartNumbers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CheckDuplicatePartNumbers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckDuplicateTools.Designer.vb">
+      <DependentUpon>CheckDuplicateTools.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CheckDuplicateTools.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckForMatchingProject.Designer.vb">
+      <DependentUpon>CheckForMatchingProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CheckForMatchingProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckingEmployeeName.Designer.vb">
+      <DependentUpon>CheckingEmployeeName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CheckingEmployeeName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckInventoryForm.Designer.vb">
+      <DependentUpon>CheckInventoryForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CheckInventoryForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckPartNumber.Designer.vb">
+      <DependentUpon>CheckPartNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CheckPartNumber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckTimeWarnerPartNumber.vb" />
+    <Compile Include="CheckVehicleRepairOrder.Designer.vb">
+      <DependentUpon>CheckVehicleRepairOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CheckVehicleRepairOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloseTheProgram.Designer.vb">
+      <DependentUpon>CloseTheProgram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CloseTheProgram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coax.Designer.vb">
+      <DependentUpon>Coax.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Coax.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoaxDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoaxDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CommandConfirmation.Designer.vb">
+      <DependentUpon>CommandConfirmation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CommandConfirmation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContineIssuseCable.Designer.vb">
+      <DependentUpon>ContineIssuseCable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ContineIssuseCable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAsset.Designer.vb">
+      <DependentUpon>CreateAsset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAsset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAssetItem.Designer.vb">
+      <DependentUpon>CreateAssetItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAssetItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAssetModuleID.Designer.vb">
+      <DependentUpon>CreateAssetModuleID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAssetModuleID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateATrailer.Designer.vb">
+      <DependentUpon>CreateATrailer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateATrailer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAVendor.Designer.vb">
+      <DependentUpon>CreateAVendor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAVendor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateEmployee.Designer.vb">
+      <DependentUpon>CreateEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateEmployeeID.designer.vb">
+      <DependentUpon>CreateEmployeeID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateEmployeeID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateHandCoilIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreateHandCoilIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CreateInventoryID.Designer.vb">
+      <DependentUpon>CreateInventoryID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateInventoryID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateInventoryIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreateInventoryIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CreateLastTransactionID.Designer.vb">
+      <DependentUpon>CreateLastTransactionID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateLastTransactionID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePartNumbers.Designer.vb">
+      <DependentUpon>CreatePartNumbers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePartNumbers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateProjectID.Designer.vb">
+      <DependentUpon>CreateProjectID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateProjectID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateReelID.Designer.vb">
+      <DependentUpon>CreateReelID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateReelID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateToolID.Designer.vb">
+      <DependentUpon>CreateToolID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateToolID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateTools.Designer.vb">
+      <DependentUpon>CreateTools.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateTools.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateVehicle.Designer.vb">
+      <DependentUpon>CreateVehicle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateVehicle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateVehicleInspectionWorkOrder.Designer.vb">
+      <DependentUpon>CreateVehicleInspectionWorkOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateVehicleInspectionWorkOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateVehicleMaintenanceWorkOrder.Designer.vb">
+      <DependentUpon>CreateVehicleMaintenanceWorkOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateVehicleMaintenanceWorkOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateVehiclePreventiveMaintenanceWorkOrder.Designer.vb">
+      <DependentUpon>CreateVehiclePreventiveMaintenanceWorkOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateVehiclePreventiveMaintenanceWorkOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateVendorID.Designer.vb">
+      <DependentUpon>CreateVendorID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateVendorID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyVehicleAvailabilityReport.Designer.vb">
+      <DependentUpon>DailyVehicleAvailabilityReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DailyVehicleAvailabilityReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyVehicleInspection.Designer.vb">
+      <DependentUpon>DailyVehicleInspection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DailyVehicleInspection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyVehicleInspectionDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DailyVehicleInspectionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DailyVehicleInspectionDataTier.vb" />
+    <Compile Include="DailyVehicleInspectionReport.Designer.vb">
+      <DependentUpon>DailyVehicleInspectionReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DailyVehicleInspectionReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataEntryDate.Designer.vb">
+      <DependentUpon>DataEntryDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateSearchClass.vb" />
+    <Compile Include="DateSearchParameters.Designer.vb">
+      <DependentUpon>DateSearchParameters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DateSearchParameters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeviceRetirementConfirmation.Designer.vb">
+      <DependentUpon>DeviceRetirementConfirmation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceRetirementConfirmation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DropCable.Designer.vb">
+      <DependentUpon>DropCable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DropCable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DropCableDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DropCableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EditCableReel.Designer.vb">
+      <DependentUpon>EditCableReel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditCableReel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditInformationTechnologyDevice.Designer.vb">
+      <DependentUpon>EditInformationTechnologyDevice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditInformationTechnologyDevice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditInventoryTables.Designer.vb">
+      <DependentUpon>EditInventoryTables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditInventoryTables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditVehicleWorkOrder.Designer.vb">
+      <DependentUpon>EditVehicleWorkOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditVehicleWorkOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDataTier.vb" />
+    <Compile Include="EmployeeIDCheckDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeIDCheckDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeIDCheckDataTier.vb" />
+    <Compile Include="EnterInformationTechnologyPassword.Designer.vb">
+      <DependentUpon>EnterInformationTechnologyPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EnterInformationTechnologyPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiber.Designer.vb">
+      <DependentUpon>Fiber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fiber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiberDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FiberDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindDuplicateProjects.Designer.vb">
+      <DependentUpon>FindDuplicateProjects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FindDuplicateProjects.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindHomeOfficeID.Designer.vb">
+      <DependentUpon>FindHomeOfficeID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FindHomeOfficeID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormForSaving.Designer.vb">
+      <DependentUpon>FormForSaving.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormForSaving.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HandCoilTransactionID.Designer.vb">
+      <DependentUpon>HandCoilTransactionID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HandCoilTransactionID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HandCoilTransactionIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HandCoilTransactionIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InformationTechnologyAccessoryHistoryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InformationTechnologyAccessoryHistoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InformationTechnologyDataTier.vb" />
+    <Compile Include="InformationTechnologyDeviceAccessoriesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InformationTechnologyDeviceAccessoriesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InformationTechnologyDevicesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InformationTechnologyDevicesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InformationTechnologyHistoryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InformationTechnologyHistoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InformationTechnologyID.Designer.vb">
+      <DependentUpon>InformationTechnologyID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InformationTechnologyID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationTechnologyIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InformationTechnologyIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InformationTechnologyInspectionDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InformationTechnologyInspectionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InformationTechnologyMenu.Designer.vb">
+      <DependentUpon>InformationTechnologyMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InformationTechnologyMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationTechnologyPasswordDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InformationTechnologyPasswordDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InformationTechnologyProblemDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InformationTechnologyProblemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InputDataValidation.vb" />
+    <Compile Include="InspectionIDGenerator.Designer.vb">
+      <DependentUpon>InspectionIDGenerator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InspectionIDGenerator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InspectionIDGeneratorDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InspectionIDGeneratorDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InspectionIDGeneratorDataTier.vb" />
+    <Compile Include="InspectionSearchMenu.Designer.vb">
+      <DependentUpon>InspectionSearchMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InspectionSearchMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InspectionsMenu.Designer.vb">
+      <DependentUpon>InspectionsMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InspectionsMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InternalProjects.Designer.vb">
+      <DependentUpon>InternalProjects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InternalProjects.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InternalProjectsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InternalProjectsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InternalProjectsDataTier.vb" />
+    <Compile Include="InternalProjectsIDCreationDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InternalProjectsIDCreationDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryDataTier.vb" />
+    <Compile Include="InventoryMenu.Designer.vb">
+      <DependentUpon>InventoryMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueCable.Designer.vb">
+      <DependentUpon>IssueCable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IssueCable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueCableDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IssueCableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IssueCableDataSet.vb">
+      <DependentUpon>IssueCableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IssueCableTableUpdate.Designer.vb">
+      <DependentUpon>IssueCableTableUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IssueCableTableUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssuedCompleteReel.Designer.vb">
+      <DependentUpon>IssuedCompleteReel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IssuedCompleteReel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssuedPartsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IssuedPartsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IssuedPartsDataTier.vb" />
+    <Compile Include="IssueInformationTechnologyDevice.Designer.vb">
+      <DependentUpon>IssueInformationTechnologyDevice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IssueInformationTechnologyDevice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobTypeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JobTypeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KeyWordSearchClass.vb" />
+    <Compile Include="LastTransaction.Designer.vb">
+      <DependentUpon>LastTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LastTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LastTransactionDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LastTransactionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LastTransactionDataTier.vb" />
+    <Compile Include="LastTransactionIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LastTransactionIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Legend.Designer.vb">
+      <DependentUpon>Legend.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Legend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logon.Designer.vb">
+      <DependentUpon>Logon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceMenu.Designer.vb">
+      <DependentUpon>MaintenanceMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaintenanceMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceReports.Designer.vb">
+      <DependentUpon>MaintenanceReports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaintenanceReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerCableQueue.Designer.vb">
+      <DependentUpon>ManagerCableQueue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerCableQueue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerQueueDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManagerQueueDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerQueueIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManagerQueueIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleUnderDevelopment.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OpenVehicleWorkOrderReport.Designer.vb">
+      <DependentUpon>OpenVehicleWorkOrderReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpenVehicleWorkOrderReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartCategoryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartCategoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PartDataTier.vb" />
+    <Compile Include="PartNumberDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartNumberDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PartNumberIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartNumberIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PartNumberIDDataTier.vb" />
+    <Compile Include="PartNumbersID.Designer.vb">
+      <DependentUpon>PartNumbersID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PartNumbersID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartPickListIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartPickListIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PartPickListIDDataTier.vb" />
+    <Compile Include="PickListDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PickListDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PickListDataTier.vb" />
+    <Compile Include="PickListNumberIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PickListNumberIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PickListNumberIDDataTier.vb" />
+    <Compile Include="PickListPartsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PickListPartsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PickListPartsDataTier.vb" />
+    <Compile Include="PlacePartID.Designer.vb">
+      <DependentUpon>PlacePartID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlacePartID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PleaseWait.Designer.vb">
+      <DependentUpon>PleaseWait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PleaseWait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintWorkOrder.Designer.vb">
+      <DependentUpon>PrintWorkOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrintWorkOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintWorkOrderOption.Designer.vb">
+      <DependentUpon>PrintWorkOrderOption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrintWorkOrderOption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceiveCable.Designer.vb">
+      <DependentUpon>ReceiveCable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiveCable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceiveCableDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReceiveCableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReceivedPartsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReceivedPartsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiveHandCoilDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReceiveHandCoilDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReceivePartsDataTier.vb" />
+    <Compile Include="ReceivePartsUpdateInventory.Designer.vb">
+      <DependentUpon>ReceivePartsUpdateInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReceivePartsUpdateInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReelIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReelIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RemovedProjectDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RemovedProjectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RemovedProjects.Designer.vb">
+      <DependentUpon>RemovedProjects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RemovedProjects.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetCableandPartNumber.Designer.vb">
+      <DependentUpon>ResetCableandPartNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResetCableandPartNumber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RetiredTools.Designer.vb">
+      <DependentUpon>RetiredTools.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RetiredTools.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RetiredVehicles.Designer.vb">
+      <DependentUpon>RetiredVehicles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RetiredVehicles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RetireInformationTechnologyDevice.Designer.vb">
+      <DependentUpon>RetireInformationTechnologyDevice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RetireInformationTechnologyDevice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnCableReel.Designer.vb">
+      <DependentUpon>ReturnCableReel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnCableReel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnCableReelDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReturnCableReelDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnInformationTechnologyDeviceAccessories.Designer.vb">
+      <DependentUpon>ReturnInformationTechnologyDeviceAccessories.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnInformationTechnologyDeviceAccessories.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnInformationTechnologyDevices.Designer.vb">
+      <DependentUpon>ReturnInformationTechnologyDevices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnInformationTechnologyDevices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDailyInspectionsByDate.Designer.vb">
+      <DependentUpon>SearchDailyInspectionsByDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDailyInspectionsByDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForProject.Designer.vb">
+      <DependentUpon>SearchForProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchWeeklyInspectionsByDate.Designer.vb">
+      <DependentUpon>SearchWeeklyInspectionsByDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchWeeklyInspectionsByDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectCableCategory.Designer.vb">
+      <DependentUpon>SelectCableCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectCableCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectCablePartNumber.Designer.vb">
+      <DependentUpon>SelectCablePartNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectCablePartNumber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectPartsWarehouse.Designer.vb">
+      <DependentUpon>SelectPartsWarehouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectPartsWarehouse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectWarehouse.Designer.vb">
+      <DependentUpon>SelectWarehouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectWarehouse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignInATool.Designer.vb">
+      <DependentUpon>SignInATool.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignInATool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignInATrailer.Designer.vb">
+      <DependentUpon>SignInATrailer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignInATrailer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignInAVehicle.Designer.vb">
+      <DependentUpon>SignInAVehicle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignInAVehicle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignOutATool.Designer.vb">
+      <DependentUpon>SignOutATool.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignOutATool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignOutATrailer.Designer.vb">
+      <DependentUpon>SignOutATrailer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignOutATrailer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignOutAVehicle.Designer.vb">
+      <DependentUpon>SignOutAVehicle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignOutAVehicle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialityCable.Designer.vb">
+      <DependentUpon>SpecialityCable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialityCable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialityCableDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpecialityCableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechnicianToolQueues.Designer.vb">
+      <DependentUpon>TechnicianToolQueues.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TechnicianToolQueues.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolAssetReport.Designer.vb">
+      <DependentUpon>ToolAssetReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ToolAssetReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolCategory.Designer.vb">
+      <DependentUpon>ToolCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ToolCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolCategoryCheck.Designer.vb">
+      <DependentUpon>ToolCategoryCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ToolCategoryCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolCategoryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ToolCategoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ToolHistory.Designer.vb">
+      <DependentUpon>ToolHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ToolHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolHistoryDataTier.vb" />
+    <Compile Include="ToolIDCheckDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ToolIDCheckDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ToolIDCheckDataTier.vb" />
+    <Compile Include="ToolsAvailable.Designer.vb">
+      <DependentUpon>ToolsAvailable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ToolsAvailable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolsCurrentlySignedOut.Designer.vb">
+      <DependentUpon>ToolsCurrentlySignedOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ToolsCurrentlySignedOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="toolsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>toolsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="toolsDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>toolsDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ToolsDataTier.vb" />
+    <Compile Include="ToolsHistoryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ToolsHistoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ToolsMenu.Designer.vb">
+      <DependentUpon>ToolsMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ToolsMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrailerHistoryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrailerHistoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TrailerHistoryDataTier.vb" />
+    <Compile Include="TrailerMenu.Designer.vb">
+      <DependentUpon>TrailerMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrailerMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrailersDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrailersDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TrailersDataTier.vb" />
+    <Compile Include="TrailersIDCheck.Designer.vb">
+      <DependentUpon>TrailersIDCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrailersIDCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrailersIDCheckDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrailersIDCheckDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TrailersIDCheckDataTier.vb" />
+    <Compile Include="TrailersInUse.Designer.vb">
+      <DependentUpon>TrailersInUse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrailersInUse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferCable.Designer.vb">
+      <DependentUpon>TransferCable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransferCable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferCableDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransferCableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TransferCoax.Designer.vb">
+      <DependentUpon>TransferCoax.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransferCoax.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferDropCable.Designer.vb">
+      <DependentUpon>TransferDropCable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransferDropCable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferFiber.Designer.vb">
+      <DependentUpon>TransferFiber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransferFiber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferSpecialtyCable.Designer.vb">
+      <DependentUpon>TransferSpecialtyCable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransferSpecialtyCable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferTwistedPair.Designer.vb">
+      <DependentUpon>TransferTwistedPair.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransferTwistedPair.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TwistedPair.Designer.vb">
+      <DependentUpon>TwistedPair.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TwistedPair.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TwistedPairDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TwistedPairDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDuplicateInventoryPartNumbers.Designer.vb">
+      <DependentUpon>UpdateDuplicateInventoryPartNumbers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDuplicateInventoryPartNumbers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateInventory.Designer.vb">
+      <DependentUpon>UpdateInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateIssueCableTable.Designer.vb">
+      <DependentUpon>UpdateIssueCableTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateIssueCableTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateManagerQueue.Designer.vb">
+      <DependentUpon>UpdateManagerQueue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateManagerQueue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateReturnedCableReel.Designer.vb">
+      <DependentUpon>UpdateReturnedCableReel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateReturnedCableReel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateVehicleRepairStatus.Designer.vb">
+      <DependentUpon>UpdateVehicleRepairStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateVehicleRepairStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateWarehouseInventory.Designer.vb">
+      <DependentUpon>UpdateWarehouseInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateWarehouseInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UseCablePulled.Designer.vb">
+      <DependentUpon>UseCablePulled.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UseCablePulled.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UtilitiesMenu.Designer.vb">
+      <DependentUpon>UtilitiesMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UtilitiesMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleAssignmentChoice.Designer.vb">
+      <DependentUpon>VehicleAssignmentChoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleAssignmentChoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleHistory.Designer.vb">
+      <DependentUpon>VehicleHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleHistoryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VehicleHistoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleHistoryDataTier.vb" />
+    <Compile Include="VehicleIDCheck.Designer.vb">
+      <DependentUpon>VehicleIDCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleIDCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleIDCheckDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VehicleIDCheckDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleIDCheckDataTier.vb" />
+    <Compile Include="VehicleInformationFromAvailablity.Designer.vb">
+      <DependentUpon>VehicleInformationFromAvailablity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleInformationFromAvailablity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleInspectionReports.Designer.vb">
+      <DependentUpon>VehicleInspectionReports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleInspectionReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleInventorySheetDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VehicleInventorySheetDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleInventorySheetDataTier.vb" />
+    <Compile Include="VehicleInventorySheets.Designer.vb">
+      <DependentUpon>VehicleInventorySheets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleInventorySheets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleInYardDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VehicleInYardDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleInYardDataTier.vb" />
+    <Compile Include="VehicleMassSignIn.Designer.vb">
+      <DependentUpon>VehicleMassSignIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleMassSignIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleMenu.Designer.vb">
+      <DependentUpon>VehicleMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehiclePreventiveMaintenanceUpdate.Designer.vb">
+      <DependentUpon>VehiclePreventiveMaintenanceUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehiclePreventiveMaintenanceUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleRepairID.Designer.vb">
+      <DependentUpon>VehicleRepairID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleRepairID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleRepairIDCheckDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VehicleRepairIDCheckDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleRepairIDCheckDataTier.vb" />
+    <Compile Include="VehicleRepairsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VehicleRepairsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleRepairsDataTier.vb" />
+    <Compile Include="VehicleReportIsRunning.Designer.vb">
+      <DependentUpon>VehicleReportIsRunning.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleReportIsRunning.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehiclesCurrentlySignedOut.Designer.vb">
+      <DependentUpon>VehiclesCurrentlySignedOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehiclesCurrentlySignedOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehiclesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VehiclesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VehiclesDataTier.vb" />
+    <Compile Include="VehicleSeries1100Availability.Designer.vb">
+      <DependentUpon>VehicleSeries1100Availability.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleSeries1100Availability.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleSeries1200Availability.Designer.vb">
+      <DependentUpon>VehicleSeries1200Availability.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleSeries1200Availability.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleSeries1500Availability.Designer.vb">
+      <DependentUpon>VehicleSeries1500Availability.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleSeries1500Availability.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleSheetAuditForm.Designer.vb">
+      <DependentUpon>VehicleSheetAuditForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleSheetAuditForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleSheetTurnInIDCreation.Designer.vb">
+      <DependentUpon>VehicleSheetTurnInIDCreation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleSheetTurnInIDCreation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleSignedOutDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VehicleSignedOutDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleSignedOutDataTier.vb" />
+    <Compile Include="VehiclesInYard.Designer.vb">
+      <DependentUpon>VehiclesInYard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehiclesInYard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehiclesSignedOutSheet.Designer.vb">
+      <DependentUpon>VehiclesSignedOutSheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehiclesSignedOutSheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleTurnInIDCreationDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VehicleTurnInIDCreationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleTurnInIDCreationDataTier.vb" />
+    <Compile Include="VendorDataTier.vb" />
+    <Compile Include="VendorIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VendorIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VendorsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VendorsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyAssetExistsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VerifyAssetExistsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyAssetItem.Designer.vb">
+      <DependentUpon>VerifyAssetItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyAssetItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerifyCablePartNumber.Designer.vb">
+      <DependentUpon>VerifyCablePartNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyCablePartNumber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerifyInformationTechnologyDevice.Designer.vb">
+      <DependentUpon>VerifyInformationTechnologyDevice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyInformationTechnologyDevice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerifyJobType.Designer.vb">
+      <DependentUpon>VerifyJobType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyJobType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerifyReelID.Designer.vb">
+      <DependentUpon>VerifyReelID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyReelID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAvailableInformationTechnologyDevices.Designer.vb">
+      <DependentUpon>ViewAvailableInformationTechnologyDevices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAvailableInformationTechnologyDevices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewDailyInspectionLog.Designer.vb">
+      <DependentUpon>ViewDailyInspectionLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDailyInspectionLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLastTransactions.Designer.vb">
+      <DependentUpon>ViewLastTransactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLastTransactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewTechnicianQueues.Designer.vb">
+      <DependentUpon>ViewTechnicianQueues.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTechnicianQueues.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewTrailerHistory.Designer.vb">
+      <DependentUpon>ViewTrailerHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTrailerHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewWeeklyInspectionLog.Designer.vb">
+      <DependentUpon>ViewWeeklyInspectionLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWeeklyInspectionLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VoidCableIssueDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VoidCableIssueDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VoidCableIssueTransaction.Designer.vb">
+      <DependentUpon>VoidCableIssueTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VoidCableIssueTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VoidInventoryTransaction.Designer.vb">
+      <DependentUpon>VoidInventoryTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VoidInventoryTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VoidInventoryTransactionDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VoidInventoryTransactionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseInventoryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WarehouseInventoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseInventoryDataTier.vb" />
+    <Compile Include="WeeklyVehicleInpectionDataTier.vb" />
+    <Compile Include="WeeklyVehicleInspections.Designer.vb">
+      <DependentUpon>WeeklyVehicleInspections.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WeeklyVehicleInspections.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeeklyVehicleInspectionsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WeeklyVehicleInspectionsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WeeklyVehicleInspectionsReport.Designer.vb">
+      <DependentUpon>WeeklyVehicleInspectionsReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WeeklyVehicleInspectionsReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCable.resx">
+      <DependentUpon>AddCable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCableUpdateTables.resx">
+      <DependentUpon>AddCableUpdateTables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddInformationTechnologyAccessories.resx">
+      <DependentUpon>AddInformationTechnologyAccessories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddInformationTechnologyAccessoryHistory.resx">
+      <DependentUpon>AddInformationTechnologyAccessoryHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddInformationTechnologyDevice.resx">
+      <DependentUpon>AddInformationTechnologyDevice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddInformationTechnologyHistory.resx">
+      <DependentUpon>AddInformationTechnologyHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddingToolHistory.resx">
+      <DependentUpon>AddingToolHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddingTrailerHistory.resx">
+      <DependentUpon>AddingTrailerHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddingVehicleHistory.resx">
+      <DependentUpon>AddingVehicleHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddManagerQueueTransaction.resx">
+      <DependentUpon>AddManagerQueueTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPartNumberToInventory.resx">
+      <DependentUpon>AddPartNumberToInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPartNumberToWarehouseInventory.resx">
+      <DependentUpon>AddPartNumberToWarehouseInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdjustCableReel.resx">
+      <DependentUpon>AdjustCableReel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministrativeMenu.resx">
+      <DependentUpon>AdministrativeMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllVehicleSheetsDone.resx">
+      <DependentUpon>AllVehicleSheetsDone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArchiveIssuedMaterial.resx">
+      <DependentUpon>ArchiveIssuedMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArchiveLastTransactions.resx">
+      <DependentUpon>ArchiveLastTransactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArchiveReceivedMaterial.resx">
+      <DependentUpon>ArchiveReceivedMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArchiveToolHistory.resx">
+      <DependentUpon>ArchiveToolHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArchiveUsedMaterial.resx">
+      <DependentUpon>ArchiveUsedMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArchiveVehicleHistory.resx">
+      <DependentUpon>ArchiveVehicleHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssetControlMenu.resx">
+      <DependentUpon>AssetControlMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoSignIn.resx">
+      <DependentUpon>AutoSignIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoVehicleSignedOutSheet.resx">
+      <DependentUpon>AutoVehicleSignedOutSheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvailableVehicles.resx">
+      <DependentUpon>AvailableVehicles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CableAdministrationMenu.resx">
+      <DependentUpon>CableAdministrationMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CableAvailability.resx">
+      <DependentUpon>CableAvailability.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CableAvailabilityReport.resx">
+      <DependentUpon>CableAvailabilityReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CableMenu.resx">
+      <DependentUpon>CableMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CableReport.resx">
+      <DependentUpon>CableReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CableSelection.resx">
+      <DependentUpon>CableSelection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CableTransactionID.resx">
+      <DependentUpon>CableTransactionID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CableUsage.resx">
+      <DependentUpon>CableUsage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CableUsageReport.resx">
+      <DependentUpon>CableUsageReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeInformationTechnologyPassword.resx">
+      <DependentUpon>ChangeInformationTechnologyPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckDailyInspectionTables.resx">
+      <DependentUpon>CheckDailyInspectionTables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckDuplicatePartNumbers.resx">
+      <DependentUpon>CheckDuplicatePartNumbers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckDuplicateTools.resx">
+      <DependentUpon>CheckDuplicateTools.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckForMatchingProject.resx">
+      <DependentUpon>CheckForMatchingProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckingEmployeeName.resx">
+      <DependentUpon>CheckingEmployeeName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckInventoryForm.resx">
+      <DependentUpon>CheckInventoryForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckPartNumber.resx">
+      <DependentUpon>CheckPartNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckVehicleRepairOrder.resx">
+      <DependentUpon>CheckVehicleRepairOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloseTheProgram.resx">
+      <DependentUpon>CloseTheProgram.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coax.resx">
+      <DependentUpon>Coax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandConfirmation.resx">
+      <DependentUpon>CommandConfirmation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContineIssuseCable.resx">
+      <DependentUpon>ContineIssuseCable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAsset.resx">
+      <DependentUpon>CreateAsset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAssetItem.resx">
+      <DependentUpon>CreateAssetItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAssetModuleID.resx">
+      <DependentUpon>CreateAssetModuleID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateATrailer.resx">
+      <DependentUpon>CreateATrailer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAVendor.resx">
+      <DependentUpon>CreateAVendor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateEmployee.resx">
+      <DependentUpon>CreateEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateEmployeeID.resx" />
+    <EmbeddedResource Include="CreateInventoryID.resx">
+      <DependentUpon>CreateInventoryID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateLastTransactionID.resx">
+      <DependentUpon>CreateLastTransactionID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePartNumbers.resx">
+      <DependentUpon>CreatePartNumbers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateProjectID.resx">
+      <DependentUpon>CreateProjectID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateReelID.resx">
+      <DependentUpon>CreateReelID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateToolID.resx">
+      <DependentUpon>CreateToolID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateTools.resx">
+      <DependentUpon>CreateTools.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateVehicle.resx">
+      <DependentUpon>CreateVehicle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateVehicleInspectionWorkOrder.resx">
+      <DependentUpon>CreateVehicleInspectionWorkOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateVehicleMaintenanceWorkOrder.resx">
+      <DependentUpon>CreateVehicleMaintenanceWorkOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateVehiclePreventiveMaintenanceWorkOrder.resx">
+      <DependentUpon>CreateVehiclePreventiveMaintenanceWorkOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateVendorID.resx">
+      <DependentUpon>CreateVendorID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyVehicleAvailabilityReport.resx">
+      <DependentUpon>DailyVehicleAvailabilityReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyVehicleInspection.resx">
+      <DependentUpon>DailyVehicleInspection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyVehicleInspectionReport.resx">
+      <DependentUpon>DailyVehicleInspectionReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryDate.resx">
+      <DependentUpon>DataEntryDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateSearchParameters.resx">
+      <DependentUpon>DateSearchParameters.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceRetirementConfirmation.resx">
+      <DependentUpon>DeviceRetirementConfirmation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DropCable.resx">
+      <DependentUpon>DropCable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCableReel.resx">
+      <DependentUpon>EditCableReel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditInformationTechnologyDevice.resx">
+      <DependentUpon>EditInformationTechnologyDevice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditInventoryTables.resx">
+      <DependentUpon>EditInventoryTables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditVehicleWorkOrder.resx">
+      <DependentUpon>EditVehicleWorkOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterInformationTechnologyPassword.resx">
+      <DependentUpon>EnterInformationTechnologyPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fiber.resx">
+      <DependentUpon>Fiber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindDuplicateProjects.resx">
+      <DependentUpon>FindDuplicateProjects.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindHomeOfficeID.resx">
+      <DependentUpon>FindHomeOfficeID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormForSaving.resx">
+      <DependentUpon>FormForSaving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HandCoilTransactionID.resx">
+      <DependentUpon>HandCoilTransactionID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationTechnologyID.resx">
+      <DependentUpon>InformationTechnologyID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationTechnologyMenu.resx">
+      <DependentUpon>InformationTechnologyMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InspectionIDGenerator.resx">
+      <DependentUpon>InspectionIDGenerator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InspectionSearchMenu.resx">
+      <DependentUpon>InspectionSearchMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InspectionsMenu.resx">
+      <DependentUpon>InspectionsMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InternalProjects.resx">
+      <DependentUpon>InternalProjects.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryMenu.resx">
+      <DependentUpon>InventoryMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueCable.resx">
+      <DependentUpon>IssueCable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueCableTableUpdate.resx">
+      <DependentUpon>IssueCableTableUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssuedCompleteReel.resx">
+      <DependentUpon>IssuedCompleteReel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueInformationTechnologyDevice.resx">
+      <DependentUpon>IssueInformationTechnologyDevice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LastTransaction.resx">
+      <DependentUpon>LastTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend.resx">
+      <DependentUpon>Legend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logon.resx">
+      <DependentUpon>Logon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceMenu.resx">
+      <DependentUpon>MaintenanceMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceReports.resx">
+      <DependentUpon>MaintenanceReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerCableQueue.resx">
+      <DependentUpon>ManagerCableQueue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenVehicleWorkOrderReport.resx">
+      <DependentUpon>OpenVehicleWorkOrderReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartNumbersID.resx">
+      <DependentUpon>PartNumbersID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlacePartID.resx">
+      <DependentUpon>PlacePartID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PleaseWait.resx">
+      <DependentUpon>PleaseWait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintWorkOrder.resx">
+      <DependentUpon>PrintWorkOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintWorkOrderOption.resx">
+      <DependentUpon>PrintWorkOrderOption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiveCable.resx">
+      <DependentUpon>ReceiveCable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceivePartsUpdateInventory.resx">
+      <DependentUpon>ReceivePartsUpdateInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemovedProjects.resx">
+      <DependentUpon>RemovedProjects.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetCableandPartNumber.resx">
+      <DependentUpon>ResetCableandPartNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RetiredTools.resx">
+      <DependentUpon>RetiredTools.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RetiredVehicles.resx">
+      <DependentUpon>RetiredVehicles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RetireInformationTechnologyDevice.resx">
+      <DependentUpon>RetireInformationTechnologyDevice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnCableReel.resx">
+      <DependentUpon>ReturnCableReel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnInformationTechnologyDeviceAccessories.resx">
+      <DependentUpon>ReturnInformationTechnologyDeviceAccessories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnInformationTechnologyDevices.resx">
+      <DependentUpon>ReturnInformationTechnologyDevices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchDailyInspectionsByDate.resx">
+      <DependentUpon>SearchDailyInspectionsByDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForProject.resx">
+      <DependentUpon>SearchForProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchWeeklyInspectionsByDate.resx">
+      <DependentUpon>SearchWeeklyInspectionsByDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectCableCategory.resx">
+      <DependentUpon>SelectCableCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectCablePartNumber.resx">
+      <DependentUpon>SelectCablePartNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectPartsWarehouse.resx">
+      <DependentUpon>SelectPartsWarehouse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectWarehouse.resx">
+      <DependentUpon>SelectWarehouse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignInATool.resx">
+      <DependentUpon>SignInATool.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignInATrailer.resx">
+      <DependentUpon>SignInATrailer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignInAVehicle.resx">
+      <DependentUpon>SignInAVehicle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignOutATool.resx">
+      <DependentUpon>SignOutATool.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignOutATrailer.resx">
+      <DependentUpon>SignOutATrailer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignOutAVehicle.resx">
+      <DependentUpon>SignOutAVehicle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecialityCable.resx">
+      <DependentUpon>SpecialityCable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechnicianToolQueues.resx">
+      <DependentUpon>TechnicianToolQueues.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolAssetReport.resx">
+      <DependentUpon>ToolAssetReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolCategory.resx">
+      <DependentUpon>ToolCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolCategoryCheck.resx">
+      <DependentUpon>ToolCategoryCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolHistory.resx">
+      <DependentUpon>ToolHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolsAvailable.resx">
+      <DependentUpon>ToolsAvailable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolsCurrentlySignedOut.resx">
+      <DependentUpon>ToolsCurrentlySignedOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolsMenu.resx">
+      <DependentUpon>ToolsMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrailerMenu.resx">
+      <DependentUpon>TrailerMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrailersIDCheck.resx">
+      <DependentUpon>TrailersIDCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrailersInUse.resx">
+      <DependentUpon>TrailersInUse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferCable.resx">
+      <DependentUpon>TransferCable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferCoax.resx">
+      <DependentUpon>TransferCoax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferDropCable.resx">
+      <DependentUpon>TransferDropCable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferFiber.resx">
+      <DependentUpon>TransferFiber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferSpecialtyCable.resx">
+      <DependentUpon>TransferSpecialtyCable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferTwistedPair.resx">
+      <DependentUpon>TransferTwistedPair.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TwistedPair.resx">
+      <DependentUpon>TwistedPair.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDuplicateInventoryPartNumbers.resx">
+      <DependentUpon>UpdateDuplicateInventoryPartNumbers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateInventory.resx">
+      <DependentUpon>UpdateInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateIssueCableTable.resx">
+      <DependentUpon>UpdateIssueCableTable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateManagerQueue.resx">
+      <DependentUpon>UpdateManagerQueue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateReturnedCableReel.resx">
+      <DependentUpon>UpdateReturnedCableReel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateVehicleRepairStatus.resx">
+      <DependentUpon>UpdateVehicleRepairStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateWarehouseInventory.resx">
+      <DependentUpon>UpdateWarehouseInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseCablePulled.resx">
+      <DependentUpon>UseCablePulled.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UtilitiesMenu.resx">
+      <DependentUpon>UtilitiesMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleAssignmentChoice.resx">
+      <DependentUpon>VehicleAssignmentChoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleHistory.resx">
+      <DependentUpon>VehicleHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleIDCheck.resx">
+      <DependentUpon>VehicleIDCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleInformationFromAvailablity.resx">
+      <DependentUpon>VehicleInformationFromAvailablity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleInspectionReports.resx">
+      <DependentUpon>VehicleInspectionReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleInventorySheets.resx">
+      <DependentUpon>VehicleInventorySheets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleMassSignIn.resx">
+      <DependentUpon>VehicleMassSignIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleMenu.resx">
+      <DependentUpon>VehicleMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehiclePreventiveMaintenanceUpdate.resx">
+      <DependentUpon>VehiclePreventiveMaintenanceUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleRepairID.resx">
+      <DependentUpon>VehicleRepairID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleReportIsRunning.resx">
+      <DependentUpon>VehicleReportIsRunning.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehiclesCurrentlySignedOut.resx">
+      <DependentUpon>VehiclesCurrentlySignedOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleSeries1100Availability.resx">
+      <DependentUpon>VehicleSeries1100Availability.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleSeries1200Availability.resx">
+      <DependentUpon>VehicleSeries1200Availability.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleSeries1500Availability.resx">
+      <DependentUpon>VehicleSeries1500Availability.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleSheetAuditForm.resx">
+      <DependentUpon>VehicleSheetAuditForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleSheetTurnInIDCreation.resx">
+      <DependentUpon>VehicleSheetTurnInIDCreation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehiclesInYard.resx">
+      <DependentUpon>VehiclesInYard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehiclesSignedOutSheet.resx">
+      <DependentUpon>VehiclesSignedOutSheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerifyAssetItem.resx">
+      <DependentUpon>VerifyAssetItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerifyCablePartNumber.resx">
+      <DependentUpon>VerifyCablePartNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerifyInformationTechnologyDevice.resx">
+      <DependentUpon>VerifyInformationTechnologyDevice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerifyJobType.resx">
+      <DependentUpon>VerifyJobType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerifyReelID.resx">
+      <DependentUpon>VerifyReelID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAvailableInformationTechnologyDevices.resx">
+      <DependentUpon>ViewAvailableInformationTechnologyDevices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewDailyInspectionLog.resx">
+      <DependentUpon>ViewDailyInspectionLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLastTransactions.resx">
+      <DependentUpon>ViewLastTransactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewTechnicianQueues.resx">
+      <DependentUpon>ViewTechnicianQueues.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewTrailerHistory.resx">
+      <DependentUpon>ViewTrailerHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewWeeklyInspectionLog.resx">
+      <DependentUpon>ViewWeeklyInspectionLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoidCableIssueTransaction.resx">
+      <DependentUpon>VoidCableIssueTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoidInventoryTransaction.resx">
+      <DependentUpon>VoidInventoryTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeeklyVehicleInspections.resx">
+      <DependentUpon>WeeklyVehicleInspections.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeeklyVehicleInspectionsReport.resx">
+      <DependentUpon>WeeklyVehicleInspectionsReport.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AdjustCableReelDataSet.xsc">
+      <DependentUpon>AdjustCableReelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AdjustCableReelDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdjustCableReelDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AdjustCableReelDataSet.xss">
+      <DependentUpon>AdjustCableReelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App.config" />
+    <None Include="ArchiveIDDataSet.xsc">
+      <DependentUpon>ArchiveIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchiveIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArchiveIDDataSet.xss">
+      <DependentUpon>ArchiveIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveIssuedDataSet.xsc">
+      <DependentUpon>ArchiveIssuedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveIssuedDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchiveIssuedDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArchiveIssuedDataSet.xss">
+      <DependentUpon>ArchiveIssuedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveLastTransactionDataSet.xsc">
+      <DependentUpon>ArchiveLastTransactionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveLastTransactionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchiveLastTransactionDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArchiveLastTransactionDataSet.xss">
+      <DependentUpon>ArchiveLastTransactionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveReceivedDataSet.xsc">
+      <DependentUpon>ArchiveReceivedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveReceivedDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchiveReceivedDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArchiveReceivedDataSet.xss">
+      <DependentUpon>ArchiveReceivedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveToolHistoryDataSet.xsc">
+      <DependentUpon>ArchiveToolHistoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveToolHistoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchiveToolHistoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArchiveToolHistoryDataSet.xss">
+      <DependentUpon>ArchiveToolHistoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveUsedDataSet.xsc">
+      <DependentUpon>ArchiveUsedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveUsedDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchiveUsedDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArchiveUsedDataSet.xss">
+      <DependentUpon>ArchiveUsedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveVehicleDailyInspectionDataSet.xsc">
+      <DependentUpon>ArchiveVehicleDailyInspectionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveVehicleDailyInspectionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchiveVehicleDailyInspectionDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArchiveVehicleDailyInspectionDataSet.xss">
+      <DependentUpon>ArchiveVehicleDailyInspectionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveVehicleHistoryDataSet.xsc">
+      <DependentUpon>ArchiveVehicleHistoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveVehicleHistoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchiveVehicleHistoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArchiveVehicleHistoryDataSet.xss">
+      <DependentUpon>ArchiveVehicleHistoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveVehicleInventoryDataSet.xsc">
+      <DependentUpon>ArchiveVehicleInventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveVehicleInventoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchiveVehicleInventoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArchiveVehicleInventoryDataSet.xss">
+      <DependentUpon>ArchiveVehicleInventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveVehicleInYardDataSet.xsc">
+      <DependentUpon>ArchiveVehicleInYardDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveVehicleInYardDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchiveVehicleInYardDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArchiveVehicleInYardDataSet.xss">
+      <DependentUpon>ArchiveVehicleInYardDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveVehicleSignedOutDataSet.xsc">
+      <DependentUpon>ArchiveVehicleSignedOutDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveVehicleSignedOutDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchiveVehicleSignedOutDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArchiveVehicleSignedOutDataSet.xss">
+      <DependentUpon>ArchiveVehicleSignedOutDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveWeeklyInspectionsDataSet.xsc">
+      <DependentUpon>ArchiveWeeklyInspectionsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveWeeklyInspectionsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchiveWeeklyInspectionsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArchiveWeeklyInspectionsDataSet.xss">
+      <DependentUpon>ArchiveWeeklyInspectionsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AssetDataSet.xsc">
+      <DependentUpon>AssetDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AssetDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AssetDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AssetDataSet.xss">
+      <DependentUpon>AssetDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AssetHistoryDataSet.xsc">
+      <DependentUpon>AssetHistoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AssetHistoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AssetHistoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AssetHistoryDataSet.xss">
+      <DependentUpon>AssetHistoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AssetItemDataSet.xsc">
+      <DependentUpon>AssetItemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AssetItemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AssetItemDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AssetItemDataSet.xss">
+      <DependentUpon>AssetItemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AssetModuleIDDataSet.xsc">
+      <DependentUpon>AssetModuleIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AssetModuleIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AssetModuleIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AssetModuleIDDataSet.xss">
+      <DependentUpon>AssetModuleIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AutoSignInDateDataSet.xsc">
+      <DependentUpon>AutoSignInDateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AutoSignInDateDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutoSignInDateDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutoSignInDateDataSet.xss">
+      <DependentUpon>AutoSignInDateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BOMPartsDataSet.xsc">
+      <DependentUpon>BOMPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BOMPartsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BOMPartsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BOMPartsDataSet.xss">
+      <DependentUpon>BOMPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CableTransactionIDDataSet.xsc">
+      <DependentUpon>CableTransactionIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CableTransactionIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CableTransactionIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CableTransactionIDDataSet.xss">
+      <DependentUpon>CableTransactionIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CableUsageDataSet.xsc">
+      <DependentUpon>CableUsageDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CableUsageDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CableUsageDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CableUsageDataSet.xss">
+      <DependentUpon>CableUsageDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CoaxDataSet.xsc">
+      <DependentUpon>CoaxDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CoaxDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CoaxDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CoaxDataSet.xss">
+      <DependentUpon>CoaxDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CreateHandCoilIDDataSet.xsc">
+      <DependentUpon>CreateHandCoilIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CreateHandCoilIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CreateHandCoilIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CreateHandCoilIDDataSet.xss">
+      <DependentUpon>CreateHandCoilIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CreateInventoryIDDataSet.xsc">
+      <DependentUpon>CreateInventoryIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CreateInventoryIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CreateInventoryIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CreateInventoryIDDataSet.xss">
+      <DependentUpon>CreateInventoryIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DailyVehicleInspectionDataSet.xsc">
+      <DependentUpon>DailyVehicleInspectionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DailyVehicleInspectionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DailyVehicleInspectionDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DailyVehicleInspectionDataSet.xss">
+      <DependentUpon>DailyVehicleInspectionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DropCableDataSet.xsc">
+      <DependentUpon>DropCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DropCableDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DropCableDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DropCableDataSet.xss">
+      <DependentUpon>DropCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeDataSet.xsc">
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeDataSet.xss">
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeIDCheckDataSet.xsc">
+      <DependentUpon>EmployeeIDCheckDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeIDCheckDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeIDCheckDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeIDCheckDataSet.xss">
+      <DependentUpon>EmployeeIDCheckDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FiberDataSet.xsc">
+      <DependentUpon>FiberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FiberDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FiberDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FiberDataSet.xss">
+      <DependentUpon>FiberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HandCoilTransactionIDDataSet.xsc">
+      <DependentUpon>HandCoilTransactionIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HandCoilTransactionIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HandCoilTransactionIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HandCoilTransactionIDDataSet.xss">
+      <DependentUpon>HandCoilTransactionIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InformationTechnologyAccessoryHistoryDataSet.xsc">
+      <DependentUpon>InformationTechnologyAccessoryHistoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InformationTechnologyAccessoryHistoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InformationTechnologyAccessoryHistoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InformationTechnologyAccessoryHistoryDataSet.xss">
+      <DependentUpon>InformationTechnologyAccessoryHistoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InformationTechnologyDeviceAccessoriesDataSet.xsc">
+      <DependentUpon>InformationTechnologyDeviceAccessoriesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InformationTechnologyDeviceAccessoriesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InformationTechnologyDeviceAccessoriesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InformationTechnologyDeviceAccessoriesDataSet.xss">
+      <DependentUpon>InformationTechnologyDeviceAccessoriesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InformationTechnologyDevicesDataSet.xsc">
+      <DependentUpon>InformationTechnologyDevicesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InformationTechnologyDevicesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InformationTechnologyDevicesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InformationTechnologyDevicesDataSet.xss">
+      <DependentUpon>InformationTechnologyDevicesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InformationTechnologyHistoryDataSet.xsc">
+      <DependentUpon>InformationTechnologyHistoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InformationTechnologyHistoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InformationTechnologyHistoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InformationTechnologyHistoryDataSet.xss">
+      <DependentUpon>InformationTechnologyHistoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InformationTechnologyIDDataSet.xsc">
+      <DependentUpon>InformationTechnologyIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InformationTechnologyIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InformationTechnologyIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InformationTechnologyIDDataSet.xss">
+      <DependentUpon>InformationTechnologyIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InformationTechnologyInspectionDataSet.xsc">
+      <DependentUpon>InformationTechnologyInspectionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InformationTechnologyInspectionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InformationTechnologyInspectionDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InformationTechnologyInspectionDataSet.xss">
+      <DependentUpon>InformationTechnologyInspectionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InformationTechnologyPasswordDataSet.xsc">
+      <DependentUpon>InformationTechnologyPasswordDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InformationTechnologyPasswordDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InformationTechnologyPasswordDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InformationTechnologyPasswordDataSet.xss">
+      <DependentUpon>InformationTechnologyPasswordDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InformationTechnologyProblemDataSet.xsc">
+      <DependentUpon>InformationTechnologyProblemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InformationTechnologyProblemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InformationTechnologyProblemDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InformationTechnologyProblemDataSet.xss">
+      <DependentUpon>InformationTechnologyProblemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InspectionIDGeneratorDataSet.xsc">
+      <DependentUpon>InspectionIDGeneratorDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InspectionIDGeneratorDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InspectionIDGeneratorDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InspectionIDGeneratorDataSet.xss">
+      <DependentUpon>InspectionIDGeneratorDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InternalProjectsDataSet.xsc">
+      <DependentUpon>InternalProjectsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InternalProjectsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InternalProjectsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InternalProjectsDataSet.xss">
+      <DependentUpon>InternalProjectsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InternalProjectsIDCreationDataSet1.xsc">
+      <DependentUpon>InternalProjectsIDCreationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="InternalProjectsIDCreationDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InternalProjectsIDCreationDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InternalProjectsIDCreationDataSet1.xss">
+      <DependentUpon>InternalProjectsIDCreationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryDataSet.xsc">
+      <DependentUpon>InventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InventoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InventoryDataSet.xss">
+      <DependentUpon>InventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IssueCableDataSet.xsc">
+      <DependentUpon>IssueCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IssueCableDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IssueCableDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IssueCableDataSet.xss">
+      <DependentUpon>IssueCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IssuedPartsDataSet.xsc">
+      <DependentUpon>IssuedPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IssuedPartsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IssuedPartsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IssuedPartsDataSet.xss">
+      <DependentUpon>IssuedPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="JobTypeDataSet.xsc">
+      <DependentUpon>JobTypeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="JobTypeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JobTypeDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JobTypeDataSet.xss">
+      <DependentUpon>JobTypeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LastTransactionDataSet.xsc">
+      <DependentUpon>LastTransactionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LastTransactionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LastTransactionDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LastTransactionDataSet.xss">
+      <DependentUpon>LastTransactionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LastTransactionIDDataSet.xsc">
+      <DependentUpon>LastTransactionIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LastTransactionIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LastTransactionIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LastTransactionIDDataSet.xss">
+      <DependentUpon>LastTransactionIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ManagerQueueDataSet.xsc">
+      <DependentUpon>ManagerQueueDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ManagerQueueDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ManagerQueueDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ManagerQueueDataSet.xss">
+      <DependentUpon>ManagerQueueDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ManagerQueueIDDataSet.xsc">
+      <DependentUpon>ManagerQueueIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ManagerQueueIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ManagerQueueIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ManagerQueueIDDataSet.xss">
+      <DependentUpon>ManagerQueueIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="PartCategoryDataSet.xsc">
+      <DependentUpon>PartCategoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartCategoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PartCategoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PartCategoryDataSet.xss">
+      <DependentUpon>PartCategoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartNumberDataSet.xsc">
+      <DependentUpon>PartNumberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartNumberDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PartNumberDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PartNumberDataSet.xss">
+      <DependentUpon>PartNumberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartNumberIDDataSet.xsc">
+      <DependentUpon>PartNumberIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartNumberIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PartNumberIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PartNumberIDDataSet.xss">
+      <DependentUpon>PartNumberIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartPickListIDDataSet.xsc">
+      <DependentUpon>PartPickListIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartPickListIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PartPickListIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PartPickListIDDataSet.xss">
+      <DependentUpon>PartPickListIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PickListDataSet.xsc">
+      <DependentUpon>PickListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PickListDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PickListDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PickListDataSet.xss">
+      <DependentUpon>PickListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PickListNumberIDDataSet.xsc">
+      <DependentUpon>PickListNumberIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PickListNumberIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PickListNumberIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PickListNumberIDDataSet.xss">
+      <DependentUpon>PickListNumberIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PickListPartsDataSet.xsc">
+      <DependentUpon>PickListPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PickListPartsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PickListPartsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PickListPartsDataSet.xss">
+      <DependentUpon>PickListPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReceiveCableDataSet.xsc">
+      <DependentUpon>ReceiveCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReceiveCableDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReceiveCableDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReceiveCableDataSet.xss">
+      <DependentUpon>ReceiveCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReceivedPartsDataSet.xsc">
+      <DependentUpon>ReceivedPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReceivedPartsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReceivedPartsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReceivedPartsDataSet.xss">
+      <DependentUpon>ReceivedPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReceiveHandCoilDataSet.xsc">
+      <DependentUpon>ReceiveHandCoilDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReceiveHandCoilDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReceiveHandCoilDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReceiveHandCoilDataSet.xss">
+      <DependentUpon>ReceiveHandCoilDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReelIDDataSet.xsc">
+      <DependentUpon>ReelIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReelIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReelIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReelIDDataSet.xss">
+      <DependentUpon>ReelIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RemovedProjectDataSet.xsc">
+      <DependentUpon>RemovedProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RemovedProjectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RemovedProjectDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RemovedProjectDataSet.xss">
+      <DependentUpon>RemovedProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReturnCableReelDataSet.xsc">
+      <DependentUpon>ReturnCableReelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReturnCableReelDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReturnCableReelDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReturnCableReelDataSet.xss">
+      <DependentUpon>ReturnCableReelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SpecialityCableDataSet.xsc">
+      <DependentUpon>SpecialityCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SpecialityCableDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SpecialityCableDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SpecialityCableDataSet.xss">
+      <DependentUpon>SpecialityCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ToolCategoryDataSet.xsc">
+      <DependentUpon>ToolCategoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ToolCategoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ToolCategoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ToolCategoryDataSet.xss">
+      <DependentUpon>ToolCategoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ToolIDCheckDataSet.xsc">
+      <DependentUpon>ToolIDCheckDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ToolIDCheckDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ToolIDCheckDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ToolIDCheckDataSet.xss">
+      <DependentUpon>ToolIDCheckDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="toolsDataSet.xsc">
+      <DependentUpon>toolsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="toolsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>toolsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="toolsDataSet.xss">
+      <DependentUpon>toolsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="toolsDataSet1.xsc">
+      <DependentUpon>toolsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="toolsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>toolsDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="toolsDataSet1.xss">
+      <DependentUpon>toolsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ToolsHistoryDataSet.xsc">
+      <DependentUpon>ToolsHistoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ToolsHistoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ToolsHistoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ToolsHistoryDataSet.xss">
+      <DependentUpon>ToolsHistoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TrailerHistoryDataSet.xsc">
+      <DependentUpon>TrailerHistoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TrailerHistoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TrailerHistoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TrailerHistoryDataSet.xss">
+      <DependentUpon>TrailerHistoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TrailersDataSet.xsc">
+      <DependentUpon>TrailersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TrailersDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TrailersDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TrailersDataSet.xss">
+      <DependentUpon>TrailersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TrailersIDCheckDataSet.xsc">
+      <DependentUpon>TrailersIDCheckDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TrailersIDCheckDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TrailersIDCheckDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TrailersIDCheckDataSet.xss">
+      <DependentUpon>TrailersIDCheckDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TransferCableDataSet.xsc">
+      <DependentUpon>TransferCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TransferCableDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TransferCableDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TransferCableDataSet.xss">
+      <DependentUpon>TransferCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TwistedPairDataSet.xsc">
+      <DependentUpon>TwistedPairDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TwistedPairDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TwistedPairDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TwistedPairDataSet.xss">
+      <DependentUpon>TwistedPairDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VehicleHistoryDataSet.xsc">
+      <DependentUpon>VehicleHistoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VehicleHistoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VehicleHistoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VehicleHistoryDataSet.xss">
+      <DependentUpon>VehicleHistoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VehicleIDCheckDataSet.xsc">
+      <DependentUpon>VehicleIDCheckDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VehicleIDCheckDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VehicleIDCheckDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VehicleIDCheckDataSet.xss">
+      <DependentUpon>VehicleIDCheckDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VehicleInventorySheetDataSet.xsc">
+      <DependentUpon>VehicleInventorySheetDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VehicleInventorySheetDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VehicleInventorySheetDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VehicleInventorySheetDataSet.xss">
+      <DependentUpon>VehicleInventorySheetDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VehicleInYardDataSet.xsc">
+      <DependentUpon>VehicleInYardDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VehicleInYardDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VehicleInYardDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VehicleInYardDataSet.xss">
+      <DependentUpon>VehicleInYardDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VehicleRepairIDCheckDataSet.xsc">
+      <DependentUpon>VehicleRepairIDCheckDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VehicleRepairIDCheckDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VehicleRepairIDCheckDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VehicleRepairIDCheckDataSet.xss">
+      <DependentUpon>VehicleRepairIDCheckDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VehicleRepairsDataSet.xsc">
+      <DependentUpon>VehicleRepairsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VehicleRepairsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VehicleRepairsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VehicleRepairsDataSet.xss">
+      <DependentUpon>VehicleRepairsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VehiclesDataSet.xsc">
+      <DependentUpon>VehiclesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VehiclesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VehiclesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VehiclesDataSet.xss">
+      <DependentUpon>VehiclesDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Archive.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EmployeeIDCheckDataTier.css" />
+    <Content Include="tools.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TWCInventory.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="VehicleSignedOutDataSet.xsc">
+      <DependentUpon>VehicleSignedOutDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VehicleSignedOutDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VehicleSignedOutDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VehicleSignedOutDataSet.xss">
+      <DependentUpon>VehicleSignedOutDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VehicleTurnInIDCreationDataSet.xsc">
+      <DependentUpon>VehicleTurnInIDCreationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VehicleTurnInIDCreationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VehicleTurnInIDCreationDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VehicleTurnInIDCreationDataSet.xss">
+      <DependentUpon>VehicleTurnInIDCreationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VendorIDDataSet.xsc">
+      <DependentUpon>VendorIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VendorIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VendorIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VendorIDDataSet.xss">
+      <DependentUpon>VendorIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VendorsDataSet.xsc">
+      <DependentUpon>VendorsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VendorsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VendorsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VendorsDataSet.xss">
+      <DependentUpon>VendorsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VerifyAssetExistsDataSet.xsc">
+      <DependentUpon>VerifyAssetExistsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VerifyAssetExistsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VerifyAssetExistsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VerifyAssetExistsDataSet.xss">
+      <DependentUpon>VerifyAssetExistsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VoidCableIssueDataSet.xsc">
+      <DependentUpon>VoidCableIssueDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VoidCableIssueDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VoidCableIssueDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VoidCableIssueDataSet.xss">
+      <DependentUpon>VoidCableIssueDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VoidInventoryTransactionDataSet.xsc">
+      <DependentUpon>VoidInventoryTransactionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VoidInventoryTransactionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VoidInventoryTransactionDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VoidInventoryTransactionDataSet.xss">
+      <DependentUpon>VoidInventoryTransactionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WarehouseInventoryDataSet.xsc">
+      <DependentUpon>WarehouseInventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WarehouseInventoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WarehouseInventoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WarehouseInventoryDataSet.xss">
+      <DependentUpon>WarehouseInventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WeeklyVehicleInspectionsDataSet.xsc">
+      <DependentUpon>WeeklyVehicleInspectionsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WeeklyVehicleInspectionsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WeeklyVehicleInspectionsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WeeklyVehicleInspectionsDataSet.xss">
+      <DependentUpon>WeeklyVehicleInspectionsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="whsetrac.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
